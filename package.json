@@ -1,0 +1,33 @@
+{
+    "bin": {
+        "total": "./bin/totaljs",
+        "total.js": "./bin/totaljs",
+        "totaljs": "./bin/totaljs",
+        "tpm": "./bin/tpm",
+        "totalpackage": "./bin/tpm"
+    },
+    "description": "Skynode totaljs framework for Node.js",
+    "devDependencies": {},
+    "directories": {
+        "test": "test"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "keywords": ["total", "iot", "framework", "web", "websocket", "mvc", "controller", "view", "angular.js", "upload", "picture", "graphicsmagick", "imagemagick", "eshop", "blog", "forum", "chat", "game", "nosql", "database", "streaming", "live", "server sent events", "sse", "multipart", "x-mixed-replace"],
+    "license": "MIT",
+    "main": "./index.js",
+    "name": "skylark-totaljs-framework",
+    "readmeFilename": "readme.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skynode-integration/skynode-totaljs-framework.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "1.0.0",
+    "bugs": {
+        "url": "https://github.com/skynode-integration/skynode-totaljs-framework/issues"
+    }
+}
