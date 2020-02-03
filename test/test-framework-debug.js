@@ -505,28 +505,28 @@ function test_routing(next) {
 	});
 
 	async.await('post-json', function(complete) {
-		utils.request(url + 'post/json/', ['json', 'post'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'post/json/', ['json', 'post'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"name":"total.js","type":"json"}', 'post-json');
+			assert(data === '{"name":"skynode-totaljs-framework","type":"json"}', 'post-json');
 			complete();
 		});
 	});
 
 	async.await('post-xml', function(complete) {
-		utils.request(url + 'post/xml/', ['xml', 'post'], '<root><name>total.js</name><page>20</page></root>', function(error, data, code, headers) {
+		utils.request(url + 'post/xml/', ['xml', 'post'], '<root><name>skynode-totaljs-framework</name><page>20</page></root>', function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"root.name":"total.js","root.page":20,"type":"xml"}', 'post-xml');
+			assert(data === '{"root.name":"skynode-totaljs-framework","root.page":20,"type":"xml"}', 'post-xml');
 			complete();
 		});
 	});
 
 	async.await('post-parse', function(complete) {
-		utils.request(url + 'post/parse/?value=query', ['post'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'post/parse/?value=query', ['post'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"name":"total.js","type":"parse"}', 'post-json');
+			assert(data === '{"name":"skynode-totaljs-framework","type":"parse"}', 'post-json');
 			complete();
 		});
 	});
@@ -541,28 +541,28 @@ function test_routing(next) {
 	});
 
 	async.await('put-json', function(complete) {
-		utils.request(url + 'put/json/', ['json', 'put'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'put/json/', ['json', 'put'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"name":"total.js","type":"json"}', 'put-json');
+			assert(data === '{"name":"skynode-totaljs-framework","type":"json"}', 'put-json');
 			complete();
 		});
 	});
 
 	async.await('put-xml', function(complete) {
-		utils.request(url + 'put/xml/', ['xml', 'put'], '<root><name>total.js</name></root>', function(error, data, code, headers) {
+		utils.request(url + 'put/xml/', ['xml', 'put'], '<root><name>skynode-totaljs-framework</name></root>', function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"root.name":"total.js","type":"xml"}', 'put-xml');
+			assert(data === '{"root.name":"skynode-totaljs-framework","type":"xml"}', 'put-xml');
 			complete();
 		});
 	});
 
 	async.await('put-parse', function(complete) {
-		utils.request(url + 'put/parse/', ['put'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'put/parse/', ['put'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
-			assert(data === '{"name":"total.js","type":"parse"}', 'put-json');
+			assert(data === '{"name":"skynode-totaljs-framework","type":"parse"}', 'put-json');
 			complete();
 		});
 	});
@@ -586,7 +586,7 @@ function test_routing(next) {
 	});
 
 	async.await('multiple POST', function(complete) {
-		utils.request(url + 'multiple/', ['post'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'multiple/', ['post'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
 			assert(data === 'POST-GET-PUT-DELETE', 'multiple (POST)');
@@ -595,7 +595,7 @@ function test_routing(next) {
 	});
 
 	async.await('multiple PUT', function(complete) {
-		utils.request(url + 'multiple/', ['put'], { name: 'total.js' }, function(error, data, code, headers) {
+		utils.request(url + 'multiple/', ['put'], { name: 'skynode-totaljs-framework' }, function(error, data, code, headers) {
 			if (error)
 				throw error;
 			assert(data === 'POST-GET-PUT-DELETE', 'multiple (PUT)');

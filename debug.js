@@ -52,7 +52,7 @@ process.title = 'total: debug';
 function runapp() {
 
 	!options && (options = {});
-	require('total.js');
+	require('skynode-totaljs-framework');
 
 	var port = parseInt(process.argv[process.argv.length - 1]);
 

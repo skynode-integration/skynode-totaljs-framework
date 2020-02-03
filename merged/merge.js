@@ -9,9 +9,9 @@ if (process.argv.indexOf('--minify') !== -1) {
 	options.mangle = true;
 	options.output = { quote_style: 1 };
 	var U = require('uglify-es');
-	output = Fs.readFileSync(Path.join(process.cwd(), 'total.js')).toString('utf8');
+	output = Fs.readFileSync(Path.join(process.cwd(), 'skynode-totaljs-framework')).toString('utf8');
 	output = U.minify(output, options);
-	Fs.writeFileSync(Path.join(process.cwd(), 'total.js'), license + output.code);
+	Fs.writeFileSync(Path.join(process.cwd(), 'skynode-totaljs-framework'), license + output.code);
 	return;
 }
 
@@ -38,4 +38,4 @@ for (var i = 0, length = merge.length; i < length; i++) {
 
 output = buffer.join('');
 console.log('---->', output.length / 1024 >> 0, 'kB');
-Fs.writeFileSync(Path.join(process.cwd(), 'total.js'), output);
+Fs.writeFileSync(Path.join(process.cwd(), 'skynode-totaljs-framework'), output);

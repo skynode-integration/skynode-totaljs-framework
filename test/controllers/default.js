@@ -182,7 +182,7 @@ function plain_post_parse() {
 	var self = this;
 	self.layout('');
 	var output = self.view('params', null, true);
-	assert.ok(output === '--body=total.js--query=query--', 'Problem with getting values from request body and URL.');
+	assert.ok(output === '--body=skynode-totaljs-framework--query=query--', 'Problem with getting values from request body and URL.');
 	self.body.type = 'parse';
 	self.json(self.body);
 }

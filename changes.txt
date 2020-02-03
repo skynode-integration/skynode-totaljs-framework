@@ -668,14 +668,14 @@
 - updated: `controller.viewCompile(body, model, [headers], [partial], [cacheKey])` add a cache key
 - updated: `image.command(arg, value, [priority], [escape])` a `priority` argument can be `escape` when it contains `boolean` value
 - updated: `U.getExtension()` returns lower-case extensions
-- updated: `total.js/debug` watchs `/workflows` file
+- updated: `skynode-totaljs-framework/debug` watchs `/workflows` file
 - updated: file `/workflows` supports custom `options`, more in docs
 - updated: `Array.random()` algorithm (+70% faster than older)
 - updated: `RESTBuilder.file(name, filetarget, [filename])` can contain `filename` instead of buffer
 - updated: `U.streamer(beg, [end], onItem(item, index), [skip], [stream])` added a new argument `stream` for flushing buffer
 - updated: `ErrorBuilder.addTransform(name, callback(isResponse))` by adding new argument `isresponse`
 - updated: `sorting` (framework + NoSQL embedded), now supports `internationalization`
-- updated: `total.js/debugger` by adding a new option `options.watch = ['directory']`
+- updated: `skynode-totaljs-framework/debugger` by adding a new option `options.watch = ['directory']`
 - updated: `U.streamer()` supports "cancelation", just return `false`
 - updated: CSS auto-prefixer, added: `repeating-linear-gradient`, `radial-gradient`, `repeating-radial-gradient` and removed `-o` prefix
 
@@ -740,7 +740,7 @@
 - added: NoSQL synchronization for cluster (more in docs)
 - added: cache synchronization for cluster (more in docs)
 - added: `F.cluster` (more in docs)
-- added: Total.js `debug` script `require('total.js/debug')` instead of `debug.js` file
+- added: Total.js `debug` script `require('skynode-totaljs-framework/debug')` instead of `debug.js` file
 - added: a support for `async` attribute when `<script async src="` tag is generating, e.g. `@{import('async default.js')}`
 
 - updated: `F.http(type, options)` supports `options.listenpath` for HTTP server (a direct shortcut for `default-listenpath`)
@@ -1076,7 +1076,7 @@
 
 ======= 2.0.0
 
-- added: new NoSQL version v4.0.0 is fully optimized for total.js
+- added: new NoSQL version v4.0.0 is fully optimized for skynode-totaljs-framework
 - added: `controller.invalid([status])` creates the ErrorBuilder instance and it responds in the next tick
 - added: `controller.sitemap_url([id])` returns an URL from the sitemap
 - added: `controller.sitemap_name([id])` returns a name/title from the sitemap
@@ -1827,7 +1827,7 @@ Framework loads modules, packages, models, definitions, controllers
 - added: view supports localization
 - added: assertion testing --> framework sets global.assert = require('assert')
 - added: module/controller supports dependencies --> exports.dependencies = ['moduleA', 'moduleB'];
-- added: framework.dependencies (this object contains all installed total.js dependencies)
+- added: framework.dependencies (this object contains all installed skynode-totaljs-framework dependencies)
 - added: controller.translate([text]);
 - added: framework.translate([language], text)
 - added: @{body.} instead of @{post.}
@@ -2104,7 +2104,7 @@ Framework loads modules, packages, models, definitions, controllers
 - added: String.prototype.endsWith(text, [ignoreCase]);
 - added: picture auto resizer: framework.resize(url, [width], [height], [extensions], [path], [options])
 - added: .webm into the config['static-accepts']
-- added: in views - into the repository, model, user, session, get, post, global, config can assign some value: @{repository.name = 'total.js'}
+- added: in views - into the repository, model, user, session, get, post, global, config can assign some value: @{repository.name = 'skynode-totaljs-framework'}
 - added: in views - supports @{foreach [property] in [array]} ... @{end}
 - added: in views - supports nested conditions
 - added: in views - supports inline helpers

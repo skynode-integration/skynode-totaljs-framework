@@ -86,13 +86,13 @@ function prototypeNumber() {
 
 // test: string prototype
 function prototypeString() {
-	var str = ' total.js    ';
-	assert.ok(str.trim() === 'total.js', 'string.trim()');
+	var str = ' skynode-totaljs-framework    ';
+	assert.ok(str.trim() === 'skynode-totaljs-framework', 'string.trim()');
 	assert.ok(str.contains(['t', 'X']), 'string.contains(all=false)');
 	assert.ok(str.contains(['t', 'X'], true) === false, 'string.contains(all=true)');
 	assert.ok('{0}={1}'.format('name', 'value') === 'name=value', 'string.format()');
-	assert.ok('<b>total.js</b>"&nbsp;'.encode() === '&lt;b&gt;total.js&lt;/b&gt;&quot;&amp;nbsp;', 'string.encode()');
-	assert.ok('&lt;b&gt;total.js&lt;/b&gt;&amp;nbsp;'.decode() === '<b>total.js</b>&nbsp;', 'string.decode()');
+	assert.ok('<b>skynode-totaljs-framework</b>"&nbsp;'.encode() === '&lt;b&gt;skynode-totaljs-framework&lt;/b&gt;&quot;&amp;nbsp;', 'string.encode()');
+	assert.ok('&lt;b&gt;skynode-totaljs-framework&lt;/b&gt;&amp;nbsp;'.decode() === '<b>skynode-totaljs-framework</b>&nbsp;', 'string.decode()');
 	assert.ok(str.trim().replaceAt(5, ';') === 'total;js', 'string.replaceAt()');
 
 	str = ' A PeTer Širka   Je krááály. ';
@@ -260,8 +260,8 @@ function prototypeString() {
 	assert.ok('totaljs'.isAlphaNumeric(), 'string.isAlphaNumeric(true)');
 	assert.ok('total js'.isAlphaNumeric() === false, 'string.isAlphaNumeric(false)');
 
-	str = '// Configuration\nname   : total.js\nage    : 29\n// comment1    : comment1\n# comment2     : comment2\ndebug  : false';
-	assert.ok(JSON.stringify(str.parseConfig({ comment3: 'comment3' })) === '{"comment3":"comment3","name":"total.js","age":"29","debug":"false"}', 'String.parseConfig()');
+	str = '// Configuration\nname   : skynode-totaljs-framework\nage    : 29\n// comment1    : comment1\n# comment2     : comment2\ndebug  : false';
+	assert.ok(JSON.stringify(str.parseConfig({ comment3: 'comment3' })) === '{"comment3":"comment3","name":"skynode-totaljs-framework","age":"29","debug":"false"}', 'String.parseConfig()');
 
 	assert.ok('á'.localeCompare2('a') === 1, 'localeCompare2 - 1');
 	assert.ok('á'.localeCompare2('b') === -1, 'localeCompare2 - 2');
@@ -431,8 +431,8 @@ function other() {
 
 	assert.ok(utils.GUID(40).length === 40, 'utils.GUID(40)');
 
-	assert.ok(utils.encode('<b>total.js</b>"&nbsp;') === '&lt;b&gt;total.js&lt;/b&gt;&quot;&amp;nbsp;', 'utils.encode()');
-	assert.ok(utils.decode('&lt;b&gt;total.js&lt;/b&gt;&amp;nbsp;') === '<b>total.js</b>&nbsp;', 'utils.decode()');
+	assert.ok(utils.encode('<b>skynode-totaljs-framework</b>"&nbsp;') === '&lt;b&gt;skynode-totaljs-framework&lt;/b&gt;&quot;&amp;nbsp;', 'utils.encode()');
+	assert.ok(utils.decode('&lt;b&gt;skynode-totaljs-framework&lt;/b&gt;&amp;nbsp;') === '<b>skynode-totaljs-framework</b>&nbsp;', 'utils.decode()');
 
 	var result = utils.parseXML('<div><b>Peter&amp;Janko</b><i style="color:red">Ita&apos;lic</i></div>');
 

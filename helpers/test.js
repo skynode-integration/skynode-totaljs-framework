@@ -11,4 +11,4 @@ const options = {};
 // options.config = { name: 'Total.js' };
 // options.sleep = 3000;
 
-require('total.js').http('test', options);
+require('skynode-totaljs-framework').http('test', options);

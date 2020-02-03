@@ -14,4 +14,4 @@ const options = {};
 // options.watch = ['private'];
 // options.livereload = true;
 
-require('total.js/debug')(options);
+require('skynode-totaljs-framework/debug')(options);
