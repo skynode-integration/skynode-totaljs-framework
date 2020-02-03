@@ -17,7 +17,7 @@
     "keywords": ["total", "iot", "framework", "web", "websocket", "mvc", "controller", "view", "angular.js", "upload", "picture", "graphicsmagick", "imagemagick", "eshop", "blog", "forum", "chat", "game", "nosql", "database", "streaming", "live", "server sent events", "sse", "multipart", "x-mixed-replace"],
     "license": "MIT",
     "main": "./index.js",
-    "name": "skylark-totaljs-framework",
+    "name": "skynode-totaljs-framework",
     "readmeFilename": "readme.md",
     "repository": {
         "type": "git",
