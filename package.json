@@ -10,6 +10,7 @@
     "dependencies": {
         "skynode-totaljs-utils": "https://github.com/skynode-integration/skynode-totaljs-utils.git#master",
         "skynode-totaljs-graphics": "https://github.com/skynode-integration/skynode-totaljs-graphics.git#master",
+        "skynode-totaljs-nosql": "https://github.com/skynode-integration/skynode-totaljs-nosql.git#master",
         "skynode-totaljs-net": "https://github.com/skynode-integration/skynode-totaljs-net.git#master"
     },
     "directories": {
