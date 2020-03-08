@@ -7,14 +7,45 @@
         "totalpackage": "./bin/tpm"
     },
     "description": "Skynode totaljs framework for Node.js",
-    "devDependencies": {},
+    "dependencies": {
+        "skynode-totaljs-utils": "https://github.com/skynode-integration/skynode-totaljs-utils.git#master",
+        "skynode-totaljs-graphics": "https://github.com/skynode-integration/skynode-totaljs-graphics.git#master",
+        "skynode-totaljs-net": "https://github.com/skynode-integration/skynode-totaljs-net.git#master"
+    },
     "directories": {
         "test": "test"
     },
     "engines": {
         "node": ">=8.0.0"
     },
-    "keywords": ["total", "iot", "framework", "web", "websocket", "mvc", "controller", "view", "angular.js", "upload", "picture", "graphicsmagick", "imagemagick", "eshop", "blog", "forum", "chat", "game", "nosql", "database", "streaming", "live", "server sent events", "sse", "multipart", "x-mixed-replace"],
+    "keywords": [
+        "total",
+        "iot",
+        "framework",
+        "web",
+        "websocket",
+        "mvc",
+        "controller",
+        "view",
+        "angular.js",
+        "upload",
+        "picture",
+        "graphicsmagick",
+        "imagemagick",
+        "eshop",
+        "blog",
+        "forum",
+        "chat",
+        "game",
+        "nosql",
+        "database",
+        "streaming",
+        "live",
+        "server sent events",
+        "sse",
+        "multipart",
+        "x-mixed-replace"
+    ],
     "license": "MIT",
     "main": "./index.js",
     "name": "skynode-totaljs-framework",

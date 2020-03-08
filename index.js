@@ -275,10 +275,10 @@ var _prefix;
 
 // GO ONLINE MODE
 !global.framework_internal && (global.framework_internal = require('./internal'));
-!global.framework_builders && (global.framework_builders = require('./builders'));
-!global.framework_utils && (global.framework_utils = require('./utils'));
-!global.framework_mail && (global.framework_mail = require('./mail'));
-!global.framework_image && (global.framework_image = require('./image'));
+!global.framework_builders && (global.framework_builders = require('skynode-totaljs-nosql/builders'));
+!global.framework_utils && (global.framework_utils = require('skynode-totaljs-utils'));
+!global.framework_mail && (global.framework_mail = require('skynode-totaljs-net/mail'));
+!global.framework_image && (global.framework_image = require('skynode-totaljs-graphics/image'));
 !global.framework_session && (global.framework_session = require('./session'));
 
 function sessionwrapper(name) {

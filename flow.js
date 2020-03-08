@@ -1,5 +1,5 @@
 if (!global.framework_utils)
-	global.framework_utils = require('./utils');
+	global.framework_utils = require('skynode-totaljs-utils');
 
 const D = '__';
 

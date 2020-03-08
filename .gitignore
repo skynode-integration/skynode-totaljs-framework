@@ -1,7 +1,3 @@
-*.sublime-project
-*.sublime-workspace
-.DS_Store
-*.log
-.idea
-test/tmp/*
+tmp/*
+logs/*
 node_modules
