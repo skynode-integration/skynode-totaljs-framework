@@ -274,7 +274,7 @@ var _flags;
 var _prefix;
 
 // GO ONLINE MODE
-!global.framework_internal && (global.framework_internal = require('./internal'));
+!global.framework_internal && (global.framework_internal = require('skynode-totaljs-utils/internal'));
 !global.framework_builders && (global.framework_builders = require('skynode-totaljs-nosql/builders'));
 !global.framework_utils && (global.framework_utils = require('skynode-totaljs-utils'));
 !global.framework_mail && (global.framework_mail = require('skynode-totaljs-net/mail'));
@@ -322,7 +322,7 @@ function nomemwrapper(name) {
 
 global.NOMEM = global.NOSQLMEMORY = function(name) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	global.NOMEM = global.NOSQLMEMORY = global.framework_nosql.inmemory;
 	return nomemwrapper(name);
 };
@@ -365,7 +365,7 @@ function filestoragewrapper(name) {
 
 global.FILESTORAGE = function(name) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	global.FILESTORAGE = filestoragewrapper;
 	return filestoragewrapper(name);
 };
@@ -1336,7 +1336,7 @@ F.refresh = function() {
 F.prototypes = function(fn) {
 
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 
 	var proto = {};
 	proto.Chunker = framework_utils.Chunker.prototype;
@@ -1698,7 +1698,7 @@ function nosqlwrapper(name) {
 
 F.database = global.NOSQL = F.nosql = function(name) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	// Someone rewrites F.database
 	if (F.database !== F.nosql)
 		global.NOSQL = F.nosql = nosqlwrapper;
@@ -1720,7 +1720,7 @@ function tablewrapper(name) {
 
 global.TABLE = function(name) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	global.TABLE = tablewrapper;
 	return tablewrapper(name);
 };
@@ -6147,13 +6147,13 @@ global.AUDIT = function(name, $, type, message) {
 
 global.NOSQLREADER = function(filename) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	return new framework_nosql.Database('readonlynosql', filename, true);
 };
 
 global.TABLEREADER = function(filename) {
 	if (!global.framework_nosql)
-		global.framework_nosql = require('./nosql');
+		global.framework_nosql = require('skynode-totaljs-nosql');
 	return new framework_nosql.Table('readonlytable', filename, true);
 };
 

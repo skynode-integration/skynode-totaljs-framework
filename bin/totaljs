@@ -4,8 +4,8 @@ var exec = require('child_process').exec;
 var fs = require('fs');
 var path = require('path');
 var os = require('os');
-var Utils = require('skynode-totaljs-framework/utils');
-var Internal = require('skynode-totaljs-framework/internal');
+var Utils = require('skynode-totaljs-utils');
+var Internal = require('skynode-totaljs-utils/internal');
 var $type = 0;
 var isDirectory = false;
 
