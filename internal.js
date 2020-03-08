@@ -36,7 +36,7 @@ const EMPTYOBJECT = {};
 const CONCAT = [null, null];
 
 if (!global.framework_utils)
-	global.framework_utils = require('./utils');
+	global.framework_utils = require('skynode-totaljs-utils');
 
 Object.freeze(EMPTYOBJECT);
 Object.freeze(EMPTYARRAY);
